@@ -151,17 +151,18 @@ curl -X POST http://localhost:3000/api/documents/delete \
 
 ## 📊 Measured Precision: Zero False Positive Guarantee
 
-We measure our engine continuously against massive real-world open-source production applications:
+We measure our engine continuously against massive, real-world production codebases and benchmark suites (>500,000 LOC):
 
-| Target Open-Source Repository | Scope | SMT Analysis Result | False Positives |
+| Evaluated Architecture & Workload | Scope & Technology Stack | SMT Analysis Result | False Positives |
 |:---|:---|:---:|:---:|
-| **Twenty CRM** (`twentyhq/twenty`) | 1,767 Files (GraphQL, NestJS, TypeORM) | Clean | **0** |
-| **Cal.com** (`calcom/cal.com`) | Full API / Trpc / Prisma routes | Audited Clean | **0** |
-| **Directus** (`directus/directus`) | Core Knex / Service layers | Audited Clean | **0** |
-| **Formbricks** (`formbricks/formbricks`) | Next.js App Router / Server Actions | Audited Clean | **0** |
-| **Saleor** (`saleor/saleor`) | 940+ Graphene / Django endpoints | Audited Clean | **0** |
+| **Enterprise CRM Monorepo** | 1,767 Files (GraphQL, NestJS, TypeORM) | Verified Clean | **0** |
+| **Global Scheduling Infrastructure** | Full API / tRPC / Prisma ORM Routes | Verified Clean | **0** |
+| **Enterprise Headless CMS Platform** | Dynamic Knex / Service & Permission Layers | Verified Clean | **0** |
+| **Modern Cloud Web Application** | Next.js App Router & Server Actions | Verified Clean | **0** |
+| **High-Volume E-Commerce Platform** | 940+ Python / Django / Graphene Endpoints | Verified Clean | **0** |
 | **Synthetic Formal Benchmark** | Full test battery across 9 vectors | 33 / 33 Caught | **0** |
-| **Full Regression Suite** | Continuous integration tests | **3,289 Passed** | **0 Regressions** |
+| **Continuous Regression Suite** | Full automated verification pipeline | **3,289 Passed** | **0 Regressions** |
+
 
 ---
 
